@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.link-in-row {
+  list-style-type: none;
+}
+
+.shadow-1 {
+  box-shadow: 0px 2px 4px 0px grey;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.align-just-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  background-image: url(/assets/imgs/hero-bg.svg);
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+.scrollIndicator {
+  height: 10px;
+  background-color: rgb(228, 14, 139);
+  width: 0px;
+}
+
+.hero-leaner-img {
+  position: absolute;
+    bottom: -1rem;
+    right: -2rem;
+    height: 66%;
+}

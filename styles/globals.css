@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.gredient-bg {
+  background-image: linear-gradient(
+    to right top,
+    #6e61c7,
+    #6f71ce,
+    #727fd4,
+    #788dd8,
+    #819bdc,
+    #79a3de,
+    #74aade,
+    #73b1dd,
+    #5fb4d7,
+    #50b5cd,
+    #4bb6bf,
+    #50b6b0
+  );
+}
+.theme-gredient {
+  background: linear-gradient(to bottom, #ba4cd6 0, #625af8 100%);
+}
+.app-header {
+  background: linear-gradient(212deg, #c171e9 1%, #c670ea 70%, #625af8 30%);
+}
+
+.fixed-center{
+  position: fixed !important;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.banner-article-standalone {
+  background-image: url(/assets/imgs/sde.svg);
+  background-size: 100% 88%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 30vh;
+  background-color: cornflowerblue;
+}
+.banner-article-standalone-course {
+  background-image: url(/assets/imgs/student-reading-book.svg);
+  background-size: 100% 88%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 30vh;
+  background-color: cornflowerblue;
+}
